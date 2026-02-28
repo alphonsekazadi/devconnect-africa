@@ -180,7 +180,7 @@ This is an MVP built for the DEV Weekend Challenge. Feel free to fork and extend
 
 ## License
 
-MIT License - feel free to use this project as you wish.
+[MIT License](LICENSE) - feel free to use this project as you wish.
 
 ---
 
