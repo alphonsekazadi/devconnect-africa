@@ -1,10 +1,16 @@
+import { Rocket } from 'lucide-react';
+
 // Simple footer with branding
 export const Footer = () => {
   return (
     <footer className="bg-black border-t border-gray-800 mt-auto">
       <div className="container mx-auto px-4 py-6">
         <div className="text-center text-gray-400 text-sm">
-          <p>Built for African developers, by African developers </p>
+          <p className="flex items-center justify-center">
+            Built for African developers, by African developers
+            <Rocket className="w-4 h-4 ml-2 text-accent" />
+          </p>
+          <p className="mt-2 text-xs">DEV Weekend Challenge: Community</p>
         </div>
       </div>
     </footer>

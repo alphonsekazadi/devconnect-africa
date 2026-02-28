@@ -78,30 +78,6 @@ npm run preview
 
 ---
 
-## Project Structure
-
-```
-src/
-├── components/
-│   ├── layout/          # Header, Footer
-│   ├── requests/        # RequestCard, RequestForm, RequestList, FilterBar
-│   └── ui/              # Button, Badge, EmptyState
-├── context/
-│   └── RequestsContext.jsx   # Global state management
-├── hooks/
-│   └── useLocalStorage.jsx   # localStorage persistence
-├── utils/
-│   └── helpers.js            # Utility functions
-├── pages/
-│   ├── Home.jsx              # Browse requests
-│   └── CreateRequest.jsx     # Post new request
-├── App.jsx
-├── main.jsx
-└── index.css
-```
-
----
-
 ## Architecture Decisions
 
 ### Why Context API?

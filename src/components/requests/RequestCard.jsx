@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Calendar, BookOpen, Users, Lightbulb, Zap, Sprout, Heart } from 'lucide-react';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
 import { useRequests } from '../../context/RequestsContext';
@@ -22,11 +23,20 @@ export const RequestCard = ({ request }) => {
     collaboration: 'bg-purple-900/50 border-purple-700',
   };
 
-  const levelEmojis = {
-    beginner: '🌱',
-    intermediate: '🚀',
-    advanced: '⚡',
+  const typeIcons = {
+    learning: BookOpen,
+    mentoring: Lightbulb,
+    collaboration: Users,
   };
+
+  const levelIcons = {
+    beginner: Sprout,
+    intermediate: Zap,
+    advanced: Zap,
+  };
+
+  const TypeIcon = typeIcons[request.type];
+  const LevelIcon = levelIcons[request.level];
 
   return (
     <div className={`bg-gray-900 border-2 rounded-lg p-6 hover:border-primary transition-colors ${typeColors[request.type]}`}>
@@ -34,12 +44,13 @@ export const RequestCard = ({ request }) => {
       <div className="flex items-start justify-between mb-3">
         <div className="flex-1">
           <h3 className="text-xl font-bold text-white mb-1">{request.title}</h3>
-          <p className="text-sm text-gray-400">{formatDate(request.createdAt)}</p>
+          <div className="flex items-center text-sm text-gray-400">
+            <Calendar className="w-4 h-4 mr-1" />
+            {formatDate(request.createdAt)}
+          </div>
         </div>
         <div className="flex items-center space-x-2">
-          <span className="text-2xl" title={request.level}>
-            {levelEmojis[request.level]}
-          </span>
+          <LevelIcon className={`w-5 h-5 ${request.level === 'advanced' ? 'text-accent' : 'text-primary'}`} title={request.level} />
         </div>
       </div>
 
@@ -56,16 +67,19 @@ export const RequestCard = ({ request }) => {
       {/* Meta Info */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center space-x-4 text-sm">
-          <span className="text-gray-400 capitalize">
-            📋 {request.type}
+          <span className="text-gray-400 capitalize flex items-center">
+            <TypeIcon className="w-4 h-4 mr-1" />
+            {request.type}
           </span>
-          <span className="text-gray-400 capitalize">
-            {levelEmojis[request.level]} {request.level}
+          <span className="text-gray-400 capitalize flex items-center">
+            <LevelIcon className="w-4 h-4 mr-1" />
+            {request.level}
           </span>
         </div>
         {request.interested > 0 && (
-          <span className="text-sm text-gray-400">
-            ❤️ {request.interested} interested
+          <span className="text-sm text-gray-400 flex items-center">
+            <Heart className="w-4 h-4 mr-1 fill-red-500 text-red-500" />
+            {request.interested}
           </span>
         )}
       </div>
@@ -77,7 +91,7 @@ export const RequestCard = ({ request }) => {
           className="w-full"
           onClick={handleInterest}
         >
-          I'm Interested 🤝
+          I'm Interested
         </Button>
       ) : (
         <div className="bg-gray-800 border border-primary rounded-lg p-4">

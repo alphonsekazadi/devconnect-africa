@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Send } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { useRequests } from '../../context/RequestsContext';
 
@@ -174,7 +175,8 @@ export const RequestForm = () => {
 
       {/* Submit Button */}
       <div className="flex space-x-4">
-        <Button type="submit" variant="accent" className="flex-1">
+        <Button type="submit" variant="accent" className="flex-1 flex items-center justify-center">
+          <Send className="w-4 h-4 mr-2" />
           Post Request
         </Button>
         <Button
