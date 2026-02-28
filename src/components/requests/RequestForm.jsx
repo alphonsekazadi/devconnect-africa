@@ -175,7 +175,7 @@ export const RequestForm = () => {
       {/* Submit Button */}
       <div className="flex space-x-4">
         <Button type="submit" variant="accent" className="flex-1">
-          Post Request 🚀
+          Post Request
         </Button>
         <Button
           type="button"
