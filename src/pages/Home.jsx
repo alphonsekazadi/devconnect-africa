@@ -33,11 +33,13 @@ export const Home = () => {
       </div>
 
       {/* Filters */}
-      <FilterBar filters={filters} onFilterChange={setFilters} />
+      <div className="mb-8">
+        <FilterBar filters={filters} onFilterChange={setFilters} />
+      </div>
 
       {/* Results Count */}
-      <div className="mb-4">
-        <p className="text-gray-400">
+      <div className="mb-6">
+        <p className="text-gray-400 text-sm">
           {filteredRequests.length} {filteredRequests.length === 1 ? 'request' : 'requests'} found
         </p>
       </div>

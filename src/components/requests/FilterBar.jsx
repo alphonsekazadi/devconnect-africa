@@ -2,8 +2,8 @@
 // WHY: Allows users to quickly find relevant requests
 export const FilterBar = ({ filters, onFilterChange }) => {
   return (
-    <div className="bg-gray-900 rounded-lg p-4 mb-6">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-800">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Tech Stack Search */}
         <div>
           <label className="block text-sm font-medium text-gray-300 mb-2">

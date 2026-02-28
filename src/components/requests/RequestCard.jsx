@@ -39,11 +39,11 @@ export const RequestCard = ({ request }) => {
   const LevelIcon = levelIcons[request.level];
 
   return (
-    <div className={`bg-gray-900 border-2 rounded-lg p-6 hover:border-primary transition-colors ${typeColors[request.type]}`}>
+    <div className={`bg-gray-900 border-2 rounded-xl p-8 hover:border-primary transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 ${typeColors[request.type]}`}>
       {/* Header */}
-      <div className="flex items-start justify-between mb-3">
+      <div className="flex items-start justify-between mb-4">
         <div className="flex-1">
-          <h3 className="text-xl font-bold text-white mb-1">{request.title}</h3>
+          <h3 className="text-xl font-bold text-white mb-2">{request.title}</h3>
           <div className="flex items-center text-sm text-gray-400">
             <Calendar className="w-4 h-4 mr-1" />
             {formatDate(request.createdAt)}
@@ -55,17 +55,17 @@ export const RequestCard = ({ request }) => {
       </div>
 
       {/* Description */}
-      <p className="text-gray-300 mb-4 line-clamp-3">{request.description}</p>
+      <p className="text-gray-300 mb-5 line-clamp-3 leading-relaxed">{request.description}</p>
 
       {/* Tech Stack */}
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap gap-2 mb-5">
         {request.techStack.map((tech, index) => (
           <Badge key={index}>{tech}</Badge>
         ))}
       </div>
 
       {/* Meta Info */}
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex items-center justify-between mb-5">
         <div className="flex items-center space-x-4 text-sm">
           <span className="text-gray-400 capitalize flex items-center">
             <TypeIcon className="w-4 h-4 mr-1" />
