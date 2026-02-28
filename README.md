@@ -2,7 +2,7 @@
 
 > A minimal collaboration board for African developers to connect, learn, and grow together.
 
-**DEV Weekend Challenge: Community**
+![devconnect-africa](image.png)
 
 ---
 
