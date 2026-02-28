@@ -1,4 +1,4 @@
-# 🚀 Quick Start Guide
+# Quick Start Guide
 
 ## Step 1: Install Dependencies
 
@@ -30,24 +30,24 @@ The app will be available at: **http://localhost:5173**
 4. Use filters to find specific tech stacks, types, or levels
 5. Click "I'm Interested" to reveal contact information
 
-## 🎯 What to Test
+## What to Test
 
-- ✅ Create multiple requests with different tech stacks
-- ✅ Filter by tech stack (try "React", "Python", etc.)
-- ✅ Filter by type (Learning, Mentoring, Collaboration)
-- ✅ Filter by level (Beginner, Intermediate, Advanced)
-- ✅ Click "I'm Interested" to reveal contact info
-- ✅ Refresh the page - data persists in localStorage
-- ✅ Test on mobile (responsive design)
+- Create multiple requests with different tech stacks
+- Filter by tech stack (try "React", "Python", etc.)
+- Filter by type (Learning, Mentoring, Collaboration)
+- Filter by level (Beginner, Intermediate, Advanced)
+- Click "I'm Interested" to reveal contact info
+- Refresh the page - data persists in localStorage
+- Test on mobile (responsive design)
 
-## 📱 Responsive Design
+## Responsive Design
 
 The app is mobile-first and works on:
 - Mobile phones (320px+)
 - Tablets (768px+)
 - Desktops (1024px+)
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **Port already in use?**
 - Vite will automatically try the next available port
@@ -61,7 +61,7 @@ The app is mobile-first and works on:
 - Check browser console for localStorage errors
 - Make sure localStorage is enabled in your browser
 
-## 🎨 Customization
+## Customization
 
 Want to change the colors? Edit `tailwind.config.js`:
 
@@ -76,7 +76,7 @@ theme: {
 }
 ```
 
-## 📦 Build for Production
+## Build for Production
 
 ```bash
 npm run build
@@ -91,4 +91,4 @@ npm run preview
 
 ---
 
-**Enjoy building with DevConnect Africa! 🌍**
+**Enjoy building with DevConnect Africa!**
