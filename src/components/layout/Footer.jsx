@@ -10,7 +10,6 @@ export const Footer = () => {
             Built for African developers, by African developers
             <Rocket className="w-4 h-4 ml-2 text-accent" />
           </p>
-          <p className="mt-2 text-xs">DEV Weekend Challenge: Community</p>
         </div>
       </div>
     </footer>
