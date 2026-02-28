@@ -63,6 +63,7 @@ This is NOT a social network or real-time chat app. It's a minimal, focused coll
    ```
    http://localhost:5173
    ```
+You can view the [Quick Start guide](QUICKSTART.md)
 
 ### Build for Production
 
