@@ -14,7 +14,7 @@ DevConnect Africa is a simple platform where African developers can:
 - Filter by tech stack, type, and level
 - Express interest and connect directly
 
-Notice : This is NOT a social network or real-time chat app. It's a minimal, focused collaboration board.
+DevConnect Africa is NOT a social network or real-time chat app. It's a minimal, focused collaboration board.
 
 ---
 
